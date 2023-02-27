@@ -1,23 +1,24 @@
-import ExpenseItem from './components/ExpenseItem';
+import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
-function App() {
+const App = () => {
   const expenses = [
-    {title: "Car Insurance", amount: 124.23, date: new Date(2022, 2, 28)},
-    {title: "Groceries", amount: 224.23, date: new Date(2022, 2, 28)}
+    {
+      title: "Car Insurance",
+      amount: 124.23,
+      date: new Date(2022, 2, 28)
+    },
+    {
+      title: "Groceries",
+      amount: 224.23,
+      date: new Date(2022, 2, 28)
+    }
   ];
 
   return (
-    <div>
-      <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      ></ExpenseItem>
+    <div className="max-w-screen-lg mx-auto pt-12 px-4 lg:px-0 text-gray-700">
+      <NewExpense/>
+      <Expenses expenses={expenses}/>
     </div>
   )
 }
