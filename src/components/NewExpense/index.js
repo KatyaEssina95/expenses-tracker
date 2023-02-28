@@ -1,4 +1,4 @@
-import ExpenseForm from "./ExpenseForm";
+import ExpenseForm from "./Form";
 import Card from "../UI/Card";
 
 const NewExpense = () => {
