@@ -1,6 +1,6 @@
 import Card from "../UI/Card";
-import ExpenseDate from './ExpenseDate'
-import ExpenseAmount from "./ExpenseAmount";
+import ExpenseDate from './Date'
+import ExpenseAmount from "./Amount";
 
 const ExpenseItem = (props) => {
   return (
